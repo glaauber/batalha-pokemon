@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <title>Batalha Pokemon</title>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <section class="startGameSection">
+        <img src="img/pokemon-logo.png" alt="logo" style="width: 200px;">
+        <button class="startGameButton" onclick="iniciar()">Iniciar</button>
+    </section>
+    <section>
+        <div class="pokemon" id="pokemon1">
+            <div class="infoPokemon">
+                <div class="barraHp hpContainer">
+                    <div class="barraHp" id="hpPokemon1" style="background-color: green;"></div>
+                </div>
+                <span style="margin-left: 10px;">CHARMANDER</span>
+            </div>
+            <img src="img/charmander.png" alt="charmander">
+        </div>
+    </section>
+    <section>
+        <div class="pokemon" style="float: left;" id="pokemon2">
+            <div class="infoPokemon">
+                <div class="barraHp hpContainer">
+                    <div class="barraHp" id="hpPokemon2" style="background-color: green;"></div>
+                </div>
+                <span style="margin-left: 10px;">PIKACHU</span>
+            </div>
+            <img src="img/pikachu.png" class="flip" alt="pikachu">
+        </div>
+    </section>
+    <section>
+        <div id="ataques">
+            ATAQUES
+            <ul>
+                <li><button onclick="atacar(0)">ATAQUE RAPIDO</button></li>
+                <li><button onclick="atacar(1)">CHOQUE DO TROVAO</button></li>
+                <li><button onclick="atacar(2)">ARRANHAO</button></li>
+            </ul>
+        </div>
+    </section>
+    <audio id="background-music">
+        <source src="assets/pokemon-battle-music.mp3" type="audio/mpeg">
+    </audio>
+    <script src="main.js"></script>
+</body>
+</html>
